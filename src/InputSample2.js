@@ -42,7 +42,7 @@ function InputSample2() {
     );
 }
 
-export default InputSample2;
+export default React.memo(InputSample2);
 
 // input 의 개수가 여러개가 됐을때는 , 단순히 useState를 여러번 사용하고 onChange도 여러개 만들어서 구현할 수 있다.
 // 더 좋은 방법은 input에 name을 설정하고 이벤트가 발생했을 때 이 값을 참조하는것이다.

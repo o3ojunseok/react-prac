@@ -49,7 +49,7 @@ function UserList({users, onRemove, onToggle}) {
     )
 }
 
-export default UserList;
+export default React.memo(UserList);
 
 // 배열이 고정적이라면 상관없지만, 배열의 인덱스를 하나하나 조회해가면서 렌더링 하는 방법은 동적인 배열을 렌더링하지 못ㅎ나다.
 // 동적인 배열을 렌더링해야할 떄는 JS 내장 함수 map()사용하자
@@ -76,5 +76,8 @@ export default UserList;
 // 언마운트 시에 하는 작업
 // setInterval, setTimeout을 사용하여 등록한 작업들 clear하기 (clearInterval, clearTimeout)
 // 라이브러리 인스턴스 제거
+
+
+// useEffect 안에서 사용하는 상태나 ,props가 있다면 useEffectdml deps에 넣어줘야한다. 그렇지 않으면 최신 props/상태를 가리키지 않는다.
 
 

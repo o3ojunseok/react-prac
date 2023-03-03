@@ -23,7 +23,7 @@ function InputSample() {
     );
 }
 
-export default InputSample;
+export default React.memo(InputSample);
 
 // input에 입력하는 값이 하단에 나오고, 초기화 버튼을 누르면 input 값이 비워지도록함.
 // useSate를 사용하여 input에 onChange 이벤트아용

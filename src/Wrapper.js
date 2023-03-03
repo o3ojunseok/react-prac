@@ -14,6 +14,6 @@ function Wrapper( {children}) {
     )
 }
 
-export default Wrapper;
+export default React.memo(Wrapper);
 
 // 컴포넌트 태그 사이에 넣은 값을 조회하고 싶을때는 props.children 
